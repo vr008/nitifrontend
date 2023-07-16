@@ -1,0 +1,52 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .slide-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+  }
+  
+  .controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+  }
+  
